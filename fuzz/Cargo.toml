@@ -1,0 +1,27 @@
+
+[package]
+name = "compute-rust-auth-fuzz"
+version = "0.0.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+jwt-simple = "0.9.3"
+
+[dependencies.compute_rust_auth]
+path = ".."
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "jwt_fuzz"
+path = "fuzz_targets/jwt_fuzz.rs"
+test = false
+doc = false

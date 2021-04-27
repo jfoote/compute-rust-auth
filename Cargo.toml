@@ -1,5 +1,5 @@
 [package]
-name = "compute-rust-auth"
+name = "compute_rust_auth"
 version = "0.2.0"
 authors = []
 edition = "2018"
