@@ -1,5 +1,5 @@
 [package]
-name = "compute-rust-auth"
+name = "compute_rust_auth"
 version = "0.2.0"
 authors = []
 edition = "2018"
@@ -16,3 +16,7 @@ serde_json = "1.0.64"
 base64 = "0.13.0"
 toml = "0.5.8"
 jwt-simple = "0.9.3"
+
+[dev-dependencies]
+quickcheck = "1"
+cookie = "0.15"
